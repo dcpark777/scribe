@@ -38,7 +38,7 @@ Creating Your First Project
 
    This creates the following directory structure::
 
-   ::
+   .. code-block:: text
 
       .
       ├── datasets/           # YAML dataset definitions
