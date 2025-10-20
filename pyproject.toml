@@ -7,7 +7,7 @@ license = "MIT"
 readme = "README.md"
 homepage = "https://github.com/dcpark777/scribe"
 repository = "https://github.com/dcpark777/scribe"
-documentation = "https://scribe.readthedocs.io"
+documentation = "https://data-scribe.readthedocs.io"
 keywords = [
     "dataset", 
     "code-generation", 

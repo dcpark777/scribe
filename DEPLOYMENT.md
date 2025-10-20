@@ -24,7 +24,7 @@ This guide covers how to deploy Scribe's documentation to various platforms.
 
 4. **Build and deploy:**
    - Click "Build version" to test
-   - Documentation will be available at `https://scribe.readthedocs.io`
+   - Documentation will be available at `https://data-scribe.readthedocs.io`
 
 ### Custom Domain (Optional):
 - Go to Admin → Domains

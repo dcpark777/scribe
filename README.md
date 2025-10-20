@@ -3,6 +3,7 @@
 [![Python Version](https://img.shields.io/badge/python-3.8%2B-blue.svg)](https://python.org)
 [![License](https://img.shields.io/badge/license-MIT-green.svg)](LICENSE)
 [![Build Status](https://img.shields.io/badge/build-passing-brightgreen.svg)]()
+[![Documentation](https://img.shields.io/badge/docs-data--scribe.readthedocs.io-blue.svg)](https://data-scribe.readthedocs.io)
 
 **Scribe** is a powerful tool for generating dataset definitions in multiple languages and formats from YAML specifications.
 
