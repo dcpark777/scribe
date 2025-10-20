@@ -10,7 +10,7 @@ Scribe offers multiple ways to configure code generation:
 
 **1. CLI Commands (Recommended):**
 
-.. code-block:: bash
+::
 
    # View current configuration
    scribe config show
@@ -181,25 +181,25 @@ CLI Configuration Commands
 
 **Show Current Configuration:**
 
-.. code-block:: bash
+::
 
    scribe config show
 
 **Set Configuration Values:**
 
-.. code-block:: bash
+::
 
    scribe config set --language <lang> --setting <name> --value <value>
 
 **List Available Settings:**
 
-.. code-block:: bash
+::
 
    scribe config list-settings --language <lang>
 
 **Reset to Defaults:**
 
-.. code-block:: bash
+::
 
    scribe config reset --language <lang>
 
@@ -208,14 +208,14 @@ Configuration Examples
 
 **Minimal Python Configuration:**
 
-.. code-block:: bash
+::
 
    scribe config set --language python --setting include_validation --value false
    scribe config set --language python --setting include_documentation --value false
 
 **Production Scala Configuration:**
 
-.. code-block:: bash
+::
 
    scribe config set --language scala --setting package_name --value com.mycompany.prod
    scribe config set --language scala --setting include_spark_imports --value true
@@ -223,7 +223,7 @@ Configuration Examples
 
 **Multi-Language Protobuf Configuration:**
 
-.. code-block:: bash
+::
 
    scribe config set --language protobuf --setting proto_version --value proto3
    scribe config set --language protobuf --setting go_package --value github.com/mycompany/datasets

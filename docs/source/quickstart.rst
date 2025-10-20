@@ -32,7 +32,7 @@ Creating Your First Project
 
 1. **Initialize a new Scribe project**::
 
-   .. code-block:: bash
+   ::
 
       scribe init
 
@@ -93,13 +93,13 @@ Generating Code
 
 1. **Generate code for all configured languages**::
 
-   .. code-block:: bash
+   ::
 
       scribe generate
 
 2. **Check the generated files**::
 
-   .. code-block:: bash
+   ::
 
       ls generated/python/    # Python dataclasses
       ls generated/scala/      # Scala case classes
@@ -193,27 +193,27 @@ Scribe allows you to customize how code is generated for each language. All conf
 
 1. **View current configuration**::
 
-   .. code-block:: bash
+   ::
 
       scribe config show
 
 2. **Configure Python generation**::
 
-   .. code-block:: bash
+   ::
 
       scribe config set --language python --setting include_validation --value true
       scribe config set --language python --setting include_documentation --value true
 
 3. **Configure Scala generation**::
 
-   .. code-block:: bash
+   ::
 
       scribe config set --language scala --setting package_name --value com.mycompany.datasets
       scribe config set --language scala --setting include_spark_imports --value true
 
 4. **Configure Protocol Buffers**::
 
-   .. code-block:: bash
+   ::
 
       scribe config set --language protobuf --setting proto_version --value proto3
       scribe config set --language protobuf --setting package_name --value com.mycompany.datasets

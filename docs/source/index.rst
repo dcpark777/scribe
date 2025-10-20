@@ -42,13 +42,13 @@ Quick Start
 
 1. Install Scribe::
 
-   .. code-block:: bash
+   ::
 
       pip install scribe
 
 2. Initialize a new project::
 
-   .. code-block:: bash
+   ::
 
       scribe init
 
@@ -58,13 +58,13 @@ Quick Start
 
 4. Generate code::
 
-   .. code-block:: bash
+   ::
 
       scribe generate
 
 5. Configure settings::
 
-   .. code-block:: bash
+   ::
 
       scribe config set --language python --setting include_validation --value true
 

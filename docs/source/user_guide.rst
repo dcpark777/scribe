@@ -10,7 +10,7 @@ Scribe provides a comprehensive CLI for all operations. Here's how to interact w
 
 **Project Management:**
 
-.. code-block:: bash
+::
 
    # Initialize a new project
    scribe init
@@ -22,7 +22,7 @@ Scribe provides a comprehensive CLI for all operations. Here's how to interact w
 
 **Code Generation:**
 
-.. code-block:: bash
+::
 
    # Generate code for all configured languages
    scribe generate
@@ -34,7 +34,7 @@ Scribe provides a comprehensive CLI for all operations. Here's how to interact w
 
 **Configuration Management:**
 
-.. code-block:: bash
+::
 
    # View current configuration
    scribe config show
@@ -50,7 +50,7 @@ Scribe provides a comprehensive CLI for all operations. Here's how to interact w
 
 **Help and Information:**
 
-.. code-block:: bash
+::
 
    # Get help for any command
    scribe --help
@@ -214,13 +214,13 @@ Scribe provides a comprehensive configuration system for customizing code genera
 
 **View Configuration:**
 
-.. code-block:: bash
+::
 
    scribe config show
 
 **Set Configuration Values:**
 
-.. code-block:: bash
+::
 
    scribe config set --language python --setting include_validation --value true
    scribe config set --language scala --setting package_name --value com.mycompany.data
@@ -228,7 +228,7 @@ Scribe provides a comprehensive configuration system for customizing code genera
 
 **List Available Settings:**
 
-.. code-block:: bash
+::
 
    scribe config list-settings --language python
    scribe config list-settings --language scala
@@ -236,7 +236,7 @@ Scribe provides a comprehensive configuration system for customizing code genera
 
 **Reset to Defaults:**
 
-.. code-block:: bash
+::
 
    scribe config reset --language python
 

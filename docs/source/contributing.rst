@@ -9,20 +9,20 @@ Getting Started
 1. **Fork the repository** on GitHub
 2. **Clone your fork** locally::
 
-   .. code-block:: bash
+   ::
 
       git clone https://github.com/your-username/scribe.git
       cd scribe
 
 3. **Install development dependencies**::
 
-   .. code-block:: bash
+   ::
 
       poetry install
 
 4. **Run tests** to ensure everything works::
 
-   .. code-block:: bash
+   ::
 
       make test
 
@@ -39,31 +39,31 @@ Development Setup
 
 1. **Install dependencies**::
 
-   .. code-block:: bash
+   ::
 
       poetry install
 
 2. **Run tests**::
 
-   .. code-block:: bash
+   ::
 
       make test
 
 3. **Run linting**::
 
-   .. code-block:: bash
+   ::
 
       make lint
 
 4. **Format code**::
 
-   .. code-block:: bash
+   ::
 
       make format
 
 5. **Type checking**::
 
-   .. code-block:: bash
+   ::
 
       make type-check
 
@@ -101,7 +101,7 @@ Pull Request Process
 
 1. **Create a feature branch**::
 
-   .. code-block:: bash
+   ::
 
       git checkout -b feature/your-feature-name
 
@@ -109,7 +109,7 @@ Pull Request Process
 
 3. **Run tests and linting**::
 
-   .. code-block:: bash
+   ::
 
       make test
       make lint
@@ -117,13 +117,13 @@ Pull Request Process
 
 4. **Commit your changes**::
 
-   .. code-block:: bash
+   ::
 
       git commit -m "Add your feature"
 
 5. **Push to your fork**::
 
-   .. code-block:: bash
+   ::
 
       git push origin feature/your-feature-name
 
