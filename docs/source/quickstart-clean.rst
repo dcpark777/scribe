@@ -51,7 +51,27 @@ Creating Your First Project
 
 2. **Examine the example dataset**::
 
-   .. literalinclude:: ../../examples/datasets/user.yaml
+   .. code-block:: yaml
+
+      # datasets/user.yaml
+      User:
+        type: object
+        description: "A comprehensive user example showing primitive types, arrays, and nested objects"
+        owner: "data-team@company.com"
+        properties:
+          id:
+            type: integer
+            description: "Unique user identifier"
+            owner: "backend-team@company.com"
+            example: 12345
+          
+          username:
+            type: string
+            description: "User's unique username"
+            owner: "backend-team@company.com"
+            min_length: 3
+            max_length: 50
+            pattern: "^[a-zA-Z0-9_]+$"
 
 Defining Your Own Dataset
 -------------------------
@@ -71,17 +91,20 @@ Let's create a simple Product dataset::
             description: "Unique product identifier"
             owner: "product-team@company.com"
             example: "PROD-001"
+          
           name:
             type: string
             description: "Product name"
             owner: "product-team@company.com"
             min_length: 2
             max_length: 100
+          
           price:
             type: number
             description: "Product price"
             owner: "finance-team@company.com"
             minimum: 0.01
+          
           category:
             type: string
             description: "Product category"
