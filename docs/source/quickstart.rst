@@ -38,7 +38,7 @@ Creating Your First Project
 
    This creates the following directory structure::
 
-   .. code-block:: text
+   ::
 
       .
       ├── datasets/           # YAML dataset definitions
@@ -58,7 +58,7 @@ Defining Your Own Dataset
 
 Let's create a simple Product dataset::
 
-   .. code-block:: yaml
+   ::
 
       # datasets/product.yaml
       Product:

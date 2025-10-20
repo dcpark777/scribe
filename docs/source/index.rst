@@ -50,22 +50,7 @@ Quick Start
 
 3. Define your dataset in YAML::
 
-   # datasets/user.yaml
-   User:
-     type: object
-     description: "A user in the system"
-     owner: "backend-team@company.com"
-     properties:
-       id:
-         type: integer
-         description: "Unique user identifier"
-         owner: "backend-team@company.com"
-       name:
-         type: string
-         description: "User's full name"
-         owner: "backend-team@company.com"
-         min_length: 2
-         max_length: 100
+   .. literalinclude:: ../../examples/datasets/user.yaml
 
 4. Generate code::
 
