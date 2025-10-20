@@ -42,11 +42,15 @@ Quick Start
 
 1. Install Scribe::
 
-   pip install scribe
+   .. code-block:: bash
+
+      pip install scribe
 
 2. Initialize a new project::
 
-   scribe init
+   .. code-block:: bash
+
+      scribe init
 
 3. Define your dataset in YAML::
 
@@ -54,11 +58,15 @@ Quick Start
 
 4. Generate code::
 
-   scribe generate
+   .. code-block:: bash
+
+      scribe generate
 
 5. Configure settings::
 
-   scribe config set --language python --setting include_validation --value true
+   .. code-block:: bash
+
+      scribe config set --language python --setting include_validation --value true
 
 Indices and tables
 ==================

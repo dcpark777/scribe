@@ -34,7 +34,7 @@ CLI Module
    :show-inheritance:
 
 Initialization Module
---------------------
+---------------------
 
 .. automodule:: scribe.init
    :members:
@@ -50,7 +50,7 @@ Generators Package
    :show-inheritance:
 
 Python Generator
----------------
+----------------
 
 .. automodule:: scribe.generators.python
    :members:
@@ -58,7 +58,7 @@ Python Generator
    :show-inheritance:
 
 Scala Generator
---------------
+---------------
 
 .. automodule:: scribe.generators.scala
    :members:
@@ -74,7 +74,7 @@ Protocol Buffers Generator
    :show-inheritance:
 
 Configuration CLI Module
------------------------
+-------------------------
 
 .. automodule:: scribe.config_cli
    :members:

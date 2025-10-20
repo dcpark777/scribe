@@ -138,7 +138,7 @@ Scala Configuration
        line_length: 100
 
 Protocol Buffers Configuration
------------------------------
+------------------------------
 
 **Settings:**
 
