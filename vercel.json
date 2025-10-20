@@ -1,0 +1,24 @@
+# Vercel configuration file
+# See https://vercel.com/docs/build-step
+
+[build]
+  command = "make docs"
+  publish = "docs/_build/html"
+
+[build.environment]
+  PYTHON_VERSION = "3.11"
+
+# Install Poetry
+[[build.processing]]
+  skip_processing = false
+
+# Redirect rules
+[[redirects]]
+  source = "/api/(.*)"
+  destination = "/api/$1"
+  statusCode = 200
+
+[[redirects]]
+  source = "/(.*)"
+  destination = "/index.html"
+  statusCode = 200

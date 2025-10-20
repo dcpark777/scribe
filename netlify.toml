@@ -1,0 +1,27 @@
+# Netlify configuration file
+# See https://docs.netlify.com/configure-builds/file-based-configuration/
+
+[build]
+  publish = "docs/_build/html"
+  command = "make docs"
+
+[build.environment]
+  PYTHON_VERSION = "3.11"
+
+# Install Poetry and dependencies
+[[build.processing]]
+  skip_processing = false
+
+[build.processing]
+  skip_processing = false
+
+# Redirect rules for Sphinx documentation
+[[redirects]]
+  from = "/api/*"
+  to = "/api/:splat"
+  status = 200
+
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
