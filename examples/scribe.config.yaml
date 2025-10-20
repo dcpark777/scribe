@@ -1,0 +1,44 @@
+# Scribe Configuration File
+# This file configures how scribe generates code for different languages
+
+# Basic settings
+target_languages: ["python", "scala", "protobuf"]
+datasets_dir: "datasets"
+output_dir: "generated"
+
+# Language-specific configurations
+languages:
+  python:
+    # Python dataclass generation settings
+    include_validation: true          # Generate validation methods
+    include_documentation: true       # Include docstrings
+    use_typing_extensions: false      # Use typing_extensions imports
+    add_dataclass_decorator: true     # Add @dataclass decorator
+    generate_init_file: true          # Generate __init__.py files
+    line_length: 100                 # Maximum line length
+    
+  scala:
+    # Scala case class generation settings
+    package_name: "com.company.datasets"  # Package name for generated classes
+    include_spark_imports: true          # Include Spark imports
+    include_validation: true             # Generate validation methods
+    include_documentation: true          # Include documentation
+    generate_package_object: true        # Generate package object
+    use_option_types: true               # Use Option types for optional fields
+    line_length: 100                    # Maximum line length
+    
+  protobuf:
+    # Protocol Buffers generation settings
+    proto_version: "proto3"                    # Protocol Buffers version
+    package_name: "com.company.datasets"       # Package name
+    go_package: "github.com/company/datasets"   # Go package path
+    java_package: "com.company.datasets"       # Java package name
+    csharp_namespace: "Company.Datasets"       # C# namespace
+    include_documentation: true                # Include documentation
+    create_package_files: true                 # Create package files
+    include_google_types: true                 # Include Google types
+    use_field_numbers: true                    # Use field numbers
+    add_go_package: true                       # Add go_package option
+    add_java_package: true                     # Add java_package option
+    add_csharp_namespace: true                 # Add csharp_namespace option
+    line_length: 100                          # Maximum line length

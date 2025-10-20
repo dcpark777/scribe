@@ -1,0 +1,118 @@
+[tool.poetry]
+name = "scribe"
+version = "0.1.0"
+description = "A powerful tool for generating dataset definitions in multiple languages and formats from YAML specifications"
+authors = ["Dan Park <dcpark913@gmail.com>"]
+license = "MIT"
+readme = "README.md"
+homepage = "https://github.com/dcpark777/scribe"
+repository = "https://github.com/dcpark777/scribe"
+documentation = "https://scribe.readthedocs.io"
+keywords = [
+    "dataset", 
+    "code-generation", 
+    "yaml", 
+    "python", 
+    "scala", 
+    "protobuf", 
+    "dataclass", 
+    "case-class", 
+    "protocol-buffers",
+    "type-safety",
+    "validation",
+    "cli"
+]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Topic :: Software Development :: Code Generators",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+    "Topic :: Text Processing :: Markup",
+    "Operating System :: OS Independent",
+]
+maintainers = ["Dan Park <dcpark913@gmail.com>"]
+packages = [{include = "scribe"}]
+include = [
+    "README.md",
+    "LICENSE",
+    "examples/**/*",
+    "docs/source/**/*",
+]
+exclude = [
+    "tests/**/*",
+    "*.pyc",
+    "__pycache__/**/*",
+    ".pytest_cache/**/*",
+    "htmlcov/**/*",
+    ".coverage",
+    "*.egg-info/**/*",
+    "docs/_build/**/*",
+    "docs/_static/**/*",
+    "docs/_templates/**/*",
+    "dist/**/*",
+    "build/**/*",
+]
+
+[tool.poetry.dependencies]
+python = "^3.8"
+pyyaml = "^6.0"
+click = "^8.0"
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^7.0"
+pytest-cov = "^4.0"
+black = "^22.0"
+flake8 = "^5.0"
+mypy = "^1.0"
+pre-commit = "^3.0"
+sphinx = ">=4.0,<6.0"
+sphinx-rtd-theme = ">=1.0,<2.0"
+
+[tool.poetry.scripts]
+scribe = "scribe.cli:main"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.black]
+line-length = 88
+target-version = ['py38']
+
+[tool.mypy]
+python_version = "3.8"
+warn_return_any = true
+warn_unused_configs = true
+disallow_untyped_defs = true
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+python_files = ["test_*.py"]
+python_classes = ["Test*"]
+python_functions = ["test_*"]
+addopts = "--cov=scribe --cov-report=html --cov-report=term-missing"
+
+[tool.coverage.run]
+source = ["scribe"]
+omit = ["tests/*"]
+
+[tool.coverage.report]
+exclude_lines = [
+    "pragma: no cover",
+    "def __repr__",
+    "if self.debug:",
+    "if settings.DEBUG",
+    "raise AssertionError",
+    "raise NotImplementedError",
+    "if 0:",
+    "if __name__ == .__main__.:",
+    "class .*\\bProtocol\\):",
+    "@(abc\\.)?abstractmethod",
+]
