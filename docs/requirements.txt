@@ -1,0 +1,10 @@
+# Documentation dependencies for Read the Docs
+# This file is used by Read the Docs to install required packages
+
+# Core dependencies
+pyyaml>=6.0
+click>=8.0
+
+# Documentation dependencies
+sphinx>=5.3.0
+sphinx-rtd-theme>=1.0.0

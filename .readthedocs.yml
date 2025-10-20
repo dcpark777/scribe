@@ -1,29 +1,8 @@
 # Read the Docs configuration file
-# See https://docs.readthedocs.io/en/stable/config-file/v2.html for details
+# Minimal configuration for Scribe documentation
 
-# Required
 version: 2
-
-# Set the OS, Python version and other tools you need
-build:
-  os: ubuntu-22.04
-  tools:
-    python: "3.11"
-  commands:
-    # Install Poetry
-    - curl -sSL https://install.python-poetry.org | python3 -
-    - export PATH="/opt/poetry/bin:$PATH"
-    # Install dependencies
-    - poetry install --no-root
-    # Build documentation
-    - cd docs && poetry run sphinx-build -b html source _build/html
 
 # Build documentation in the "docs" directory with Sphinx
 sphinx:
   configuration: docs/source/conf.py
-
-# Optionally set the version of Python and its requirements
-python:
-  version: 3.11
-  install:
-    - requirements: docs/requirements.txt
